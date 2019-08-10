@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Wiwii.TestConnectionPage"
+   >
+     
+    <ContentPage.Content>
+
+         <Grid Padding="40" ColumnSpacing="20" RowSpacing="40"
+              BackgroundColor="#0d0e21" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+        
+            <Label x:Name="bthDownload"
+                    Grid.Row="2"
+                    Text="Download"
+                    TextColor="#b292c5"
+                  FontAttributes="Bold"
+                    FontSize="Large"/>
+            <Label x:Name="value"
+                  
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Text="0Mb/s"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                    TextColor="#00a8a8"
+                    />
+            <Label x:Name="bthUpload"
+                    Grid.Row="3"
+                    Text="Upload"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    TextColor="#b292c5"
+                   
+                    />
+            <Label x:Name="value2"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                    Text="0kb/s"
+                    TextColor="#00a8a8"
+                  />
+            <Button x:Name="btntest"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Text="TEST"
+                    TextColor="white"
+                    BackgroundColor="#2774aa"
+                    Clicked="SpeedTest"/>
+
+             <microcharts:ChartView x:Name="chartView"  HeightRequest="300" WidthRequest = "300" BackgroundColor="#0d0e21" />
+        </Grid>
+
+
+    </ContentPage.Content>
+</ContentPage>

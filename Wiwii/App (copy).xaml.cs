@@ -10,7 +10,7 @@ namespace Wiwii
         {
             InitializeComponent();
 
-            MainPage = new ProfilePage();
+            MainPage = new TestConnectionPage();
         }
 
         protected override void OnStart()
