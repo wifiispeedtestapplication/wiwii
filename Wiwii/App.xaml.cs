@@ -10,7 +10,8 @@ namespace Wiwii
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+             MainPage = new MasterDetail();
+            //MainPage = new History();
         }
 
         protected override void OnStart()

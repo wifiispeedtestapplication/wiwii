@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Wiwii.Connection_status">
+    <ContentPage.Content>
+      
+        <Grid Padding="20" ColumnSpacing="10" RowSpacing="20"
+              BackgroundColor="#0d0e21" >
+            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblconnection_status"
+                   Text="Connection Status"
+                  HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="white"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   />
+            <Label x:Name="lbltype"
+                    Grid.Row="1"
+                    Text="Type of Connection"
+                    TextColor="#b292c5"
+                  FontAttributes="Bold"
+                    FontSize="Large"/>
+             
+            <Label x:Name="value"
+                  
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Text="Wifi"
+                   
+                   FontSize="Large"
+                    TextColor="#00a8a8"
+                    />
+             <Label x:Name="bthlocation"
+                    Grid.Row="3"
+                    Text="Location"
+                    TextColor="#b292c5"
+                  FontAttributes="Bold"
+                    FontSize="Large"/>
+             <Label x:Name="location"
+                  
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Text="Barrie,Ontario"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                    TextColor="#00a8a8"
+                    />
+            
+            <Button x:Name="btnCANCEL"
+                    Grid.Row="4"
+                    Text="CANCEL"
+                    TextColor="white"
+                    BackgroundColor="#2774aa"/>
+            <Button x:Name="btnSAVE"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Text="SAVE"
+                    TextColor="white"
+                    BackgroundColor="#2774aa"/>
+        </Grid>  
+    </ContentPage.Content>
+</ContentPage>
